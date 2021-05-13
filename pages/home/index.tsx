@@ -1,43 +1,55 @@
+import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
-
+import CustomButton from '../../components/CustomButton'
+import { Container } from './styles'
+ 
 export default function Home() {
+  
+  let widthPadrao  
+  let heightPadrao
+
+  if (typeof window !== "undefined") {
+    widthPadrao = window.innerWidth
+    heightPadrao = window.innerHeight  
+  }
+
   return (
-    <div className={styles.container}>
-      <Head>
+    <Container>
+
+    <Head>
         <title>Sistema de consulta de Pokémons</title>
         <meta name="description" content="Sistema para coletar informações sobre pokémons" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main>
       
       <Image
         src="/Pokemon-Logo.png"
         alt="LogoPokemon"
-        width={600}
-        height={250}
-      />
+        width={widthPadrao / 2}
+        height={heightPadrao / 2}
+        />
 
-        <p className={styles.description}>
+        <p>
           Sistema de consulta de informações dos pokémons
         </p>
-      
-      <Link href="/home">Vamos lá!</Link>
+
+        <CustomButton link="/detalhes" text="Vamos lá!" />
       
       </main>
 
-      <footer className={styles.footer}>
+      <footer>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://github.com/ejunior95"
           target="_blank"
           rel="noopener noreferrer"
-        >
+          >
           Desenvolvido por Edvaldo de Ramos Junior
         </a>
       </footer>
-    </div>
+      
+      </Container>
   )
 }

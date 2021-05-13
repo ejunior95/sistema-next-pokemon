@@ -1,23 +1,23 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import { Container } from './styles'
 
-export default function Home() {
+export default function Detalhes() {
   return (
-    <div className={styles.container}>
+    <Container>
       <Head>
         <title>Sistema de consulta de Pokémons</title>
         <meta name="description" content="Sistema para coletar informações sobre pokémons" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>Tela inicial</h1>
+      <main>
+        <h1>Tela inicial</h1>
       </main>
 
-      <footer className={styles.footer}>
+      <footer>
       
       </footer>
-    </div>
+    </Container>
+    
   )
 }
