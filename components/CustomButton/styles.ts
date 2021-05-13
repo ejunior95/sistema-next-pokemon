@@ -14,5 +14,12 @@ export const Container = styled.div`
       border: 5px solid #1260B3;
       border-radius: 30px;
       cursor: pointer;
+      position: relative;
+      transition: .3s ease-in-out;
+  }
+
+  a:hover {
+    transition: .3s ease-in-out;
+    transform: scale(1.2)
   }
 `;
