@@ -29,7 +29,7 @@ export default function Home() {
           Sistema de consulta de informações dos pokémons
         </p>
 
-        <CustomButton text="Vamos lá!" link="/detalhes" widthButton="160px" heightButton="60px" />
+        <CustomButton text="Vamos lá!" link="/detalhes" widthButton="160px" heightButton="50px" />
       
       </main>
 

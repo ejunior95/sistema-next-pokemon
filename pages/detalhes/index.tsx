@@ -25,8 +25,15 @@ export default function Detalhes() {
       </main>
 
       <footer>
-      
+      <a
+          href="https://github.com/ejunior95"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+          Desenvolvido por Edvaldo de Ramos Junior
+        </a>
       </footer>
+
     </Container>
     
   )
