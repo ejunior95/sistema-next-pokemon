@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import { Container } from './styles'
+import SearchBox from '../../components/SearchBox'
+import CustomButton from '../../components/CustomButton'
 
 export default function Detalhes() {
   return (
@@ -10,8 +12,16 @@ export default function Detalhes() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <nav>
+      <img src="/Pokemon-Logo.png" alt="Logo_Pokemon" className="logo-pokemon" />
+        <SearchBox />
+        <CustomButton text="Login" link="/home" widthButton="150px" heightButton="40px" />
+      </nav>
+
       <main>
-        <h1>Tela inicial</h1>
+
+
+
       </main>
 
       <footer>

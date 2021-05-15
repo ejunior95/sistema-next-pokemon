@@ -32,4 +32,9 @@ export const Container = styled.div`
     color: #fff;
     text-align: center;
   }
+
+  .logo-pokemon {
+    width: 55vw;
+    height: 45vh;
+  }
 `;

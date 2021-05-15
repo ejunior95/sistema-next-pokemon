@@ -5,17 +5,21 @@ import { Container } from './styles';
 interface IProps {
   text: string;
   link: string;
+  widthButton: string;
+  heightButton: string;
 }
 
 const CustomButton = (props: IProps) => {
  
   const {
     text,
-    link
+    link,
+    widthButton,
+    heightButton
   } = props
  
   return(
-      <Container>
+      <Container widthButton={widthButton} heightButton={heightButton}>
           <Link href={link}><a>{text}</a></Link>
       </Container>
   );

@@ -1,6 +1,5 @@
 import React from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
 import CustomButton from '../../components/CustomButton'
 import { Container } from './styles'
  
@@ -24,19 +23,13 @@ export default function Home() {
       </Head>
 
       <main>
-      
-      <Image
-        src="/Pokemon-Logo.png"
-        alt="LogoPokemon"
-        width={widthPadrao / 2}
-        height={heightPadrao / 2}
-        />
+      <img src="/Pokemon-Logo.png" alt="LogoPokemon" className="logo-pokemon" />
 
         <p>
           Sistema de consulta de informações dos pokémons
         </p>
 
-        <CustomButton link="/detalhes" text="Vamos lá!" />
+        <CustomButton text="Vamos lá!" link="/detalhes" widthButton="160px" heightButton="60px" />
       
       </main>
 

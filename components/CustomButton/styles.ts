@@ -1,17 +1,29 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+interface IProps {
+  widthButton: string;
+  heightButton: string;
+}
+
+export const Container = styled.div<IProps>`
   display: flex;
   align-items: center;
   justify-content: center;
 
+
   a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background-color: #FFCC01;
       color: #1260B3;
-      padding: 10px 35px 10px 35px;
+      width: ${(props) => props.widthButton};
+      height: ${(props) => props.heightButton};
       font-size: 20px;
       font-weight: bolder;
-      border: 5px solid #1260B3;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #1260B3;
       border-radius: 30px;
       cursor: pointer;
       position: relative;
@@ -23,3 +35,5 @@ export const Container = styled.div`
     transform: scale(1.2)
   }
 `;
+
+
