@@ -2,6 +2,8 @@ import Head from 'next/head'
 import { Container } from './styles'
 import SearchBox from '../../components/SearchBox'
 import CustomButton from '../../components/CustomButton'
+import React from 'react'
+import CardPokemon from '../../components/CardPokemon'
 
 export default function Detalhes() {
   return (
@@ -19,9 +21,9 @@ export default function Detalhes() {
       </nav>
 
       <main>
-
-
-
+        <CardPokemon />
+        <CardPokemon />
+        <CardPokemon />
       </main>
 
       <footer>

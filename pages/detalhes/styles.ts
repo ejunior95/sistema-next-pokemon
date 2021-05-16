@@ -25,7 +25,10 @@ export const Container = styled.div`
   }
 
   main { 
-    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
     height: 100vh;
     background-color: #dcdde1;
   }
