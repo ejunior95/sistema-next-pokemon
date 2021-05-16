@@ -8,7 +8,7 @@ const SearchBox = () => {
       <Container>
           <FaSearch className="icone-search" />
           <input type="text" placeholder="Procurar pokémons" />
-          <AiFillCaretDown className="icone-search-expand" />
+          <AiFillCaretDown className="icone-search-expand" title="Visualizar filtros" />
       </Container>
   );
 }

@@ -28,7 +28,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 80%;
+    width: 1090px;
     height: 100vh;
     background-color: #dcdde1;
   }
