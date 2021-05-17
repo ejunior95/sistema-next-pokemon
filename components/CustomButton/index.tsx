@@ -4,7 +4,7 @@ import { Container } from './styles';
 
 interface IProps {
   text: string;
-  link: string;
+  link?: string;
   widthButton: string;
   heightButton: string;
 }

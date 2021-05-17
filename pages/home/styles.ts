@@ -35,6 +35,6 @@ export const Container = styled.div`
 
   .logo-pokemon {
     width: 55vw;
-    height: 45vh;
+    height: 50vh;
   }
 `;

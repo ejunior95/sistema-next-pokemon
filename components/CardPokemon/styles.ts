@@ -42,7 +42,7 @@ export const Container = styled.div`
   }
   .tipo-pokemon {
     color: #ffffff;
-    background-color: #F25D52;
+    background-color: #535662;
     padding: 5px 10px 5px 10px;
     border-radius: 5px;
 }

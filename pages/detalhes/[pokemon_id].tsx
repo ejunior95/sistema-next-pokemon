@@ -5,15 +5,21 @@ import CustomButton from '../../components/CustomButton'
 import React from 'react'
 import CardPokemon from '../../components/CardPokemon'
 import { useState } from 'react'
+import { GetStaticProps } from 'next'
+import api from '../api'
 
-export default function Detalhes() {
+interface IProps {
+  pokemon: {
+    id?: number;
+    name?: string;
+    name_ability?: string; 
+    front_default?: string;
+  }
+}
+
+export default function DetalhesPesquisa(props:IProps) {
 
   const [pesquisa, setPesquisa] = useState('')
-
-  function pesquisarPokemon() {
-    
-  }
-
   return (
     <Container>
       <Head>
@@ -49,3 +55,22 @@ export default function Detalhes() {
   )
 
 }
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const { pokemon_id } = params;
+  const response = await api.get(`/pokemon/${pokemon_id}`)
+
+  const pokemon = {
+    id: response.data.id,
+    name: response.data.name,
+    name_ability: response.data, 
+    front_default: response.data
+  }
+
+  return {
+    props: {
+      pokemon: response.data,
+    },
+    revalidade: 60 * 30, // 30 minutes
+  };
+};
