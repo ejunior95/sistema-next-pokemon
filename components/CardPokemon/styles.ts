@@ -20,8 +20,8 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: -15px;
-    left: -5px;
+    top: -22px;
+    left: -22px;
     padding: 10px 15px 10px 15px;
     background-color: #535662;
     border-radius: 5px;
@@ -29,7 +29,7 @@ export const Container = styled.div`
     border: 1px solid #100B16;
 }
 .img-pokemon {
-    width: 80%;
+    width: 75%;
 }
 .id-pokemon {
     transform: rotate(-45deg);

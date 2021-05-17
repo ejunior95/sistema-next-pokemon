@@ -17,7 +17,7 @@ export default function Detalhes() {
       <nav>
       <img src="/Pokemon-Logo.png" alt="Logo_Pokemon" className="logo-pokemon" />
         <SearchBox />
-        <CustomButton text="Login" link="/home" widthButton="150px" heightButton="40px" />
+        <CustomButton text="Procurar" link="/home" widthButton="150px" heightButton="40px" />
       </nav>
 
       <main>
